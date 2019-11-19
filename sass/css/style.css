@@ -8099,13 +8099,33 @@ body {
 .container {
   display: grid;
   grid-template-columns: 16px 1fr 16px;
-  grid-template-rows: 40px 40px 1fr 50px 40px;
+  grid-template-rows: 20px 50px 15px 1fr 50px 40px;
   height: 100vh;
   width: 100vw;
 }
 
+#header1 {
+  grid-area: 2/2/3/3;
+  background-color: #fef7e1;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+#header1 #burger {
+  color: #15627d;
+  font-size: 3rem;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
 #container-yellow {
   background-color: #f9cf5c;
+}
+
+.body-light-yellow {
+  grid-area: 3/2/6/3;
+  background-color: #fef7e1;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
 
 #template2-head {
