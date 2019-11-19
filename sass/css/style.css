@@ -8091,5 +8091,16 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+.container {
+  display: grid;
+  grid-template-columns: 16px 1fr 16px;
+  grid-template-rows: 40px 40px 1fr 50px 40px;
+  height: 100vh;
+  width: 100vw;
+}
+
+#container-yellow {
+  background-color: #f9cf5c;
+}
 
 /*# sourceMappingURL=style.css.map */

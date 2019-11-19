@@ -43,3 +43,20 @@
 
 //costum colors:
 @import "components/costum/colors.scss";
+
+
+
+
+//APP-specific code
+
+.container {
+    display: grid;
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-rows: 40px 40px 1fr 50px 40px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container-yellow {
+    background-color: map-get($yellow, 'base');
+}
