@@ -45,11 +45,23 @@
 @import "components/costum/colors.scss";
 
 
+//APP-specific code
 body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-rows: 40px 40px 1fr 50px 40px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container-yellow {
+    background-color: map-get($yellow, 'base');
+}
 
 //****** TEMPLATE-2 STYLES ******//
 #template2-head {
@@ -62,6 +74,9 @@ body {
     left: 0.5rem;
     font-size: 3rem;
     color: map-get($blue, 'base');
+    &:hover {
+        color: map-get($blue, 'light');
+    }
 }
 
 #link-login {
@@ -76,18 +91,17 @@ body {
     }
 }
 
-
-
-//APP-specific code
-
-.container {
-    display: grid;
-    grid-template-columns: 16px 1fr 16px;
-    grid-template-rows: 40px 40px 1fr 50px 40px;
-    height: 100vh;
-    width: 100vw;
-}
-
-#container-yellow {
-    background-color: map-get($yellow, 'base');
+#button-signup {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 44rem;
+    margin-bottom: 4rem;
+    width: 60%;
+    border-radius: 5px;
+    background-color: map-get($blue, "base");
+    
+    &:hover {
+        background-color: map-get($blue, "light");
+    }
 }
