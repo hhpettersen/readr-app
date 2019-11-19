@@ -54,15 +54,36 @@ body {
 .container {
     display: grid;
     grid-template-columns: 16px 1fr 16px;
-    grid-template-rows: 40px 40px 1fr 50px 40px;
+    grid-template-rows: 20px 50px 15px 1fr 50px 40px;
     height: 100vh;
     width: 100vw;
+}
+
+#header1 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: map-get($yellow, 'light');
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+
+    #burger {
+        color: map-get($blue, 'base');
+        font-size: 3rem;
+        padding-top: 5px;
+        padding-right: 5px;
+    }
 }
 
 #container-yellow {
     background-color: map-get($yellow, 'base');
 }
 
+
+.body-light-yellow {
+    grid-area: 3 / 2 / 6 / 3;
+    background-color: map-get($yellow, 'light');
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
 //****** TEMPLATE-2 STYLES ******//
 #template2-head {
     height: 4rem;
