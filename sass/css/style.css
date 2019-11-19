@@ -8155,12 +8155,16 @@ body {
   bottom: 10px;
   border-top: 1.5px solid #f9cf5c;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 #template3-nav i {
   color: #2384a6;
   font-size: 3rem;
-  margin: 10px;
+  padding: 10px 20px;
+  border-left: 1.5px solid #f9cf5c;
+}
+#template3-nav #home {
+  border-left: none;
 }
 
 /*# sourceMappingURL=style.css.map */
