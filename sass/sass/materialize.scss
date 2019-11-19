@@ -131,9 +131,25 @@ body {
     text-decoration: underline;
     text-align: center;
     color: map-get($pink, "dark");
-
+    
     &:hover {
         color: map-get($pink, "base");
+    }
+}
+
+
+#button-signup {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 44rem;
+    margin-bottom: 4rem;
+    width: 60%;
+    border-radius: 5px;
+    background-color: map-get($blue, "base");
+    
+    &:hover {
+        background-color: map-get($blue, "light");
     }
 }
 
@@ -195,22 +211,6 @@ body {
     }
 }
 
-
-
-#button-signup {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 44rem;
-    margin-bottom: 4rem;
-    width: 60%;
-    border-radius: 5px;
-    background-color: map-get($blue, "base");
-    
-    &:hover {
-        background-color: map-get($blue, "light");
-    }
-}
 
 //***** MENU STYLES ******//
 
