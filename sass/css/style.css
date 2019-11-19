@@ -8189,4 +8189,24 @@ a.waves-effect.waves-light.btn, a.waves-effect.waves-light.btn-large, a.waves-ef
   background-color: #2384a6;
 }
 
+#navigation {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #15627d;
+  color: #ffffff;
+}
+
+#navigation #nav-content  {
+  width: 90%;
+}
+
+#close-button {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */

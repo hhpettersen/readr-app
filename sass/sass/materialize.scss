@@ -79,12 +79,14 @@ body {
     background-color: map-get($yellow, 'base');
 }
 
+
 .body-light-yellow {
     grid-area: 3 / 2 / 6 / 3;
     background-color: map-get($yellow, 'light');
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
 }
+
 
 #main-logo {
     grid-area: 3 / 2 / 6 / 3;
@@ -106,7 +108,6 @@ a.waves-effect.waves-light.btn {
     align-self: center;
     margin-top: 50px;
 }
-
 
 //****** TEMPLATE-2 STYLES ******//
 #template2-head {
@@ -149,4 +150,27 @@ a.waves-effect.waves-light.btn {
     &:hover {
         background-color: map-get($blue, "light");
     }
+}
+
+//***** MENU STYLES ******//
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: map-get($blue, 'base');
+    color: map-get($white, 'base');
+}
+
+#navigation #nav-content {
+    width: 90%;
+    
+}
+
+#close-button {
+    color: map-get($white, 'base');
 }
