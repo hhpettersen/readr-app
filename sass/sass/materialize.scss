@@ -43,3 +43,34 @@
 
 //costum colors:
 @import "components/costum/colors.scss";
+
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+//****** TEMPLATE-2 STYLES ******//
+#template2-head {
+    height: 4rem;
+}
+
+#button-back {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.5rem;
+    font-size: 3rem;
+    color: map-get($blue, 'base');
+}
+
+#link-login {
+    display: block;
+    margin-top: 1rem;
+    text-decoration: underline;
+    text-align: center;
+    color: map-get($pink, "dark");
+
+    &:hover {
+        color: map-get($pink, "base");
+    }
+}

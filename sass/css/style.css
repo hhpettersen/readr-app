@@ -8091,5 +8091,32 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#template2-head {
+  height: 4rem;
+}
+
+#button-back {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.5rem;
+  font-size: 3rem;
+  color: #15627d;
+}
+
+#link-login {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: underline;
+  text-align: center;
+  color: #990757;
+}
+#link-login:hover {
+  color: #f0108a;
+}
 
 /*# sourceMappingURL=style.css.map */
