@@ -8128,6 +8128,27 @@ body {
   border-bottom-right-radius: 11px;
 }
 
+#main-logo {
+  grid-area: 3/2/6/3;
+  height: 140px;
+  width: 275px;
+  background-color: pink;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+a.waves-effect.waves-light.btn, a.waves-effect.waves-light.btn-large, a.waves-effect.waves-light.btn-small {
+  grid-area: 3/2/6/3;
+  background-color: #15627d;
+  color: #fef7e1;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+  margin-top: 50px;
+}
+
 #template2-head {
   height: 4rem;
 }
@@ -8214,6 +8235,26 @@ body {
 }
 #button-signup:hover {
   background-color: #2384a6;
+}
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #15627d;
+  color: #ffffff;
+}
+
+#navigation #nav-content  {
+  width: 90%;
+}
+
+#close-button {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -46,6 +46,8 @@
 
 
 //APP-specific code
+
+//****** TEMPLATE-1 STYLES ******//
 body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -84,6 +86,29 @@ body {
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
 }
+
+
+#main-logo {
+    grid-area: 3 / 2 / 6 / 3;
+    height: 140px;
+    width: 275px;
+    background-color: pink;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+a.waves-effect.waves-light.btn {
+    grid-area: 3 / 2 / 6 / 3;
+    background-color: map-get($blue, 'base');
+    color: map-get($yellow, 'light');
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    margin-top: 50px;
+}
+
 //****** TEMPLATE-2 STYLES ******//
 #template2-head {
     height: 4rem;
@@ -185,4 +210,27 @@ body {
     &:hover {
         background-color: map-get($blue, "light");
     }
+}
+
+//***** MENU STYLES ******//
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: map-get($blue, 'base');
+    color: map-get($white, 'base');
+}
+
+#navigation #nav-content {
+    width: 90%;
+    
+}
+
+#close-button {
+    color: map-get($white, 'base');
 }
