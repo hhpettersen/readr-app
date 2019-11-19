@@ -137,6 +137,66 @@ a.waves-effect.waves-light.btn {
     }
 }
 
+
+
+//APP-specific code
+
+.container {
+    display: grid;
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-rows: 20px 50px 15px 1fr 50px 40px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container-yellow {
+    background-color: map-get($yellow, 'base');
+}
+
+//TEMPLATE-3
+
+#template3-head {
+    background-color: map-get($yellow, 'base');
+    grid-area: 1/1/4/4;
+}
+
+#light-yellow-box {
+    background-color: map-get($yellow, 'light');
+    grid-area: 2/2/3/3;
+    border-radius: 11px;
+    display: inline-block;
+
+    #burger {
+        color: map-get($blue, 'base');
+        font-size: 3rem;
+        padding: 5px 5px 0 0;
+    }
+}
+
+#template3-nav {
+    grid-area: 5/3/5/2;
+    height: 100%;
+    width: 100%;
+    bottom: 10px;
+    border-top: 1.5px solid map-get($yellow, 'base');
+
+    display:flex;
+    justify-content: center;
+
+    i {
+        color: map-get($blue, 'light');
+        font-size: 3rem;
+        padding: 10px 20px;
+        border-left: 1.5px solid map-get($yellow, 'base');
+    }
+
+    #home {
+        border-left: none;
+    }
+}
+
+
+
 #button-signup {
     display: block;
     text-align: center;
