@@ -45,12 +45,45 @@
 @import "components/costum/colors.scss";
 
 
+//APP-specific code
 body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-rows: 20px 50px 15px 1fr 50px 40px;
+    height: 100vh;
+    width: 100vw;
+}
 
+#header1 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: map-get($yellow, 'light');
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+
+    #burger {
+        color: map-get($blue, 'base');
+        font-size: 3rem;
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+}
+
+#container-yellow {
+    background-color: map-get($yellow, 'base');
+}
+
+
+.body-light-yellow {
+    grid-area: 3 / 2 / 6 / 3;
+    background-color: map-get($yellow, 'light');
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
 //****** TEMPLATE-2 STYLES ******//
 #template2-head {
     height: 4rem;
@@ -62,6 +95,9 @@ body {
     left: 0.5rem;
     font-size: 3rem;
     color: map-get($blue, 'base');
+    &:hover {
+        color: map-get($blue, 'light');
+    }
 }
 
 #link-login {
@@ -76,6 +112,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 
 
 //APP-specific code
@@ -136,3 +173,19 @@ body {
 
 
 
+=======
+#button-signup {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 44rem;
+    margin-bottom: 4rem;
+    width: 60%;
+    border-radius: 5px;
+    background-color: map-get($blue, "base");
+    
+    &:hover {
+        background-color: map-get($blue, "light");
+    }
+}
+>>>>>>> ffbb39d7c6f4d3a2ec7d7a8c63e327d374f6dc37
