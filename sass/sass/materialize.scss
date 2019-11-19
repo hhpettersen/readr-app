@@ -126,3 +126,26 @@ body {
         background-color: map-get($blue, "light");
     }
 }
+
+//***** MENU STYLES ******//
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: map-get($blue, 'base');
+    color: map-get($white, 'base');
+}
+
+#navigation #nav-content {
+    width: 90%;
+    
+}
+
+#close-button {
+    color: map-get($white, 'base');
+}
