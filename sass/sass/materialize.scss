@@ -97,7 +97,7 @@ body {
     margin-top: 50px;
 }
 
-a.waves-effect.waves-light.btn {
+#discover-button {
     grid-area: 3 / 2 / 6 / 3;
     background-color: map-get($blue, 'base');
     color: map-get($yellow, 'light');
