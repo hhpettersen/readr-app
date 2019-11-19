@@ -24,3 +24,11 @@ Send
 Pan_tool
 copyright
 Cake
+
+//functions
+
+modal
+https://materializecss.com/modals.html#!
+
+carousel-full width slider
+https://materializecss.com/carousel.html#one!
