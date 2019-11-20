@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>ReadR</title>
+        <link rel="stylesheet" href="../../sass/css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="main-container">
+
+            <!-- Sidebar menu -->
+            <div id='navigation' class='hide-mobile'>
+                <div class='menu-row right'>
+                    <a id='close-button' href="#">
+                        <i id='close-btn1' class='material-icons right medium'>clear</i>
+                    </a>
+                </div>
+                <div class='menu-row border top hover'>
+                    <img src="../images/face.png" alt="profile picture">
+                    <a href="#">My profile</a>
+                </div>
+                <div class='menu-row border hover'>
+                    <i class="material-icons">public</i>
+                    <a href="#">Discover</a>
+                </div>
+                <div class='menu-row border hover'>
+                    <i class="material-icons">sms</i>
+                    <a href="#">Messages</a>
+                </div>
+                <div class='menu-row border hover'>
+                    <i class="material-icons">help</i>
+                    <a href="#">help</a>
+                </div>
+                <div class='menu-row hover'>
+                    <i class="material-icons">phone</i>
+                    <a href="#">About Readr</a>
+                </div>
+                <div class='menu-row end hover'>
+                    <i class="material-icons">settings</i>
+                    <a href="#">Settings</a>
+                </div>
+            </div>
+    
+            <!-- Filter overlay -->
+            <div id="filter-overlay" class=''>
+                <i id='close-btn2' class='material-icons right medium'>clear</i>
+                <div class='range-container top'>
+                    <p id='filter-age' class='filter-text'>Select minimum age:</p>
+                    <p id='age'></p>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="range-age" min="18" max="60";
+                    </form>
+                </div>
+                <div class='range-container male'>
+                    <p>Male:</p>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class='range-container female'>
+                    <p>Female:</p>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class=range-container>
+                    <p id='filter-range' class='filter-text'>Maximum distance:</p>
+                    <p id='dist'></p>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="range-dist" min="1" max="100";
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Search page main content -->
+            <div class="container" id="container-yellow">
+                <header id="header1">
+                    <i class="material-icons right" id="burger">menu</i>
+                </header>
+                <div class="body-light-yellow">
+                    <img src="../../custom_artwork/readr logo blue-01.svg" id="main-logo"/>
+                    <img src="../../custom_artwork/filter icon1 dark blue-01.svg" id="discover-filter"/>
+                    <a href='find-carousel.html' class="waves-effect waves-light btn" id="discover-button">Discover</a>
+                </div>
+                <footer class="footer1" id="template3-nav">
+                    <i class="material-icons " id='home'>public</i> 
+                    <i class="material-icons " id='chat'>chat</i>
+                    <i class="material-icons " id='search'>search</i>
+                    <i class="material-icons " id='person'>person</i>
+            </div>
+        </div>
+        
+        <script src='../../sass/js/bin/materialize.js'></script>
+        <script>
+            const burger = document.querySelector('#burger');
+            const nav = document.querySelector('#navigation');
+            const closeBtn1 = document.querySelector('#close-btn1');
+            const overlay = document.querySelector('#filter-overlay');
+            const filterBtn = document.querySelector('#discover-filter');
+            const closeBtn2 = document.querySelector('#close-btn2');
+            const rangeAge = document.querySelector('#range-age');
+            const ageText = document.querySelector('#age');
+            const rangeDist = document.querySelector('#range-dist');
+            const rangeText = document.querySelector('#dist')
+
+            burger.addEventListener('click', e => {
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });
+            
+            closeBtn1.addEventListener('click', e => {
+                nav.classList.add('hide-mobile');
+                e.preventDefault();
+            });
+
+            filterBtn.addEventListener('click', e=> {
+                overlay.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });
+
+            closeBtn2.addEventListener('click', e=> {
+                overlay.classList.add('hide-mobile');
+                e.preventDefault();
+            });
+
+            rangeAge.addEventListener('change', e => {
+                ageText.innerHTML = rangeAge.value;
+                e.preventDefault();
+            })
+            
+            rangeDist.addEventListener('change', e => {
+                rangeText.innerHTML = rangeDist.value + 'km';
+                e.preventDefault();
+            });
+        </script>
+    </body>
+    
+</html>
