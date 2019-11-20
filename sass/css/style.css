@@ -8343,7 +8343,7 @@ div#navigation .menu-row a {
 #find-content p {
   font-size: 1rem;
   padding: 0px 20px;
-  margin: 0.2rem 0rem;
+  color: #011936;
 }
 
 #profile-pic {
@@ -8361,6 +8361,7 @@ div#navigation .menu-row a {
   position: absolute;
   font-size: 2.5rem;
   padding: 5px;
+  color: #15627d;
 }
 
 #profile-text {
@@ -8381,6 +8382,7 @@ div#navigation .menu-row a {
   margin-bottom: 0.5rem;
   margin-top: 1.2rem;
   display: inline-block;
+  color: #011936;
 }
 
 #book-covers {

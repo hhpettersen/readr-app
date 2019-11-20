@@ -335,7 +335,7 @@ div#navigation {
     p {
         font-size: 1rem;
         padding: 0px 20px;
-        margin: 0.2rem 0rem;
+        color: map-get($blue, 'dark');
     }
 }
 
@@ -354,10 +354,14 @@ div#navigation {
     position: absolute;
     font-size: 2.5rem;
     padding: 5px;
+    color: map-get($blue, 'base')
 }
 
 #profile-text {
     margin: 0 auto;
+    
+
+    
 }
 
 #num-reads {
@@ -374,6 +378,7 @@ div#navigation {
         margin-bottom: 0.5rem;
         margin-top: 1.2rem;
         display: inline-block;
+        color: map-get($blue, 'dark')
     }
 }
 
