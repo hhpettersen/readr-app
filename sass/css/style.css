@@ -8438,4 +8438,8 @@ div#navigation .menu-row a {
   height: 100% !important;
 }
 
+.carousel-item {
+  cursor: default;
+}
+
 /*# sourceMappingURL=style.css.map */
