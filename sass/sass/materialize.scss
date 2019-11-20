@@ -174,7 +174,7 @@ body {
         margin-top: 1rem;
         margin-left: 3.8rem;
         color: map-get($blue, 'dark');
-        margin-bottom: 3.5rem;
+        margin-bottom: 1.5rem;
 
         &.top {
             margin-top: 6rem;
@@ -349,7 +349,7 @@ div#navigation {
     justify-content: flex-start;
     position: fixed;
     width: 70%;
-    height: 91.2vh;
+    height: 100%;
     top: 0;
     right: 0;
     background-color: map-get($blue, 'base');
