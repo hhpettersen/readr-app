@@ -80,6 +80,13 @@ body {
     }
 }
 
+//****** DISCOVER PAGE *******//
+
+#main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #container-yellow {
     background-color: map-get($yellow, 'base');
 }
@@ -115,6 +122,12 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: 1.5rem;
+    z-index: 8;
+    margin-bottom: 2.5rem;
+
+    &:hover {
+        background-color: map-get($blue, 'light');
+    }
 }
 
 .footer1 {
@@ -122,6 +135,58 @@ body {
     background-color: map-get($yellow, 'light');
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
+}
+
+//******** FILTER OVERLAY *******//
+#filter-overlay {
+    position: fixed;
+    top: 8rem;
+    left: 42.5%;
+    margin-left: -37.5%;
+    background-color: white;
+    width: 90%; 
+    height: 75%;
+    z-index: 5;
+    border-radius: 5px;
+    border: 0.8px map-get($blue, 'light') solid;
+
+    &.hide-mobile {
+        display:none;
+    }
+
+    #close-btn2 {
+        display:block;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        font-size: 3rem;
+        color: map-get($blue, 'dark');
+
+        &:hover {
+            cursor: pointer;
+            color: map-get($blue, 'base');
+        }
+    }
+
+    .range-container {
+        font-size: 1.6rem;
+        margin-top: 8rem;
+        margin-left: 3.8rem;
+        color: map-get($blue, 'dark');
+
+        p {
+            display: inline-block;
+
+            &#age {
+                float: right;
+                margin-right: 7rem;
+            }
+        }
+    }
+
+    .range-field {
+        width: 80%;
+        margin: 1rem auto;
+    }
 }
 
 //****** TEMPLATE-2 STYLES ******//
@@ -285,8 +350,8 @@ div#navigation {
 
         &.right {
             position: absolute;
-            right: 1rem;
-            top: 1.2rem;
+            right: 0.8rem;
+            top: 1rem;
         }
 
         &.top {
@@ -310,7 +375,7 @@ div#navigation {
         }
 
         i {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
         }
 
         img {
@@ -328,9 +393,6 @@ div#navigation {
     }
 }
 
-#close-button {
-    color: map-get($white, 'base');
-}
 
 //*******FIND OTHERS********//
 

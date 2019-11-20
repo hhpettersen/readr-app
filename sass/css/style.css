@@ -8123,6 +8123,11 @@ body {
   cursor: pointer;
 }
 
+#main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 #container-yellow {
   background-color: #f9cf5c;
 }
@@ -8157,6 +8162,11 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   font-size: 1.5rem;
+  z-index: 8;
+  margin-bottom: 2.5rem;
+}
+#discover-button:hover {
+  background-color: #2384a6;
 }
 
 .footer1 {
@@ -8164,6 +8174,50 @@ body {
   background-color: #fef7e1;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
+}
+
+#filter-overlay {
+  position: fixed;
+  top: 8rem;
+  left: 42.5%;
+  margin-left: -37.5%;
+  background-color: white;
+  width: 90%;
+  height: 75%;
+  z-index: 5;
+  border-radius: 5px;
+  border: 0.8px #2384a6 solid;
+}
+#filter-overlay.hide-mobile {
+  display: none;
+}
+#filter-overlay #close-btn2 {
+  display: block;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #011936;
+}
+#filter-overlay #close-btn2:hover {
+  cursor: pointer;
+  color: #15627d;
+}
+#filter-overlay .range-container {
+  font-size: 1.6rem;
+  margin-top: 8rem;
+  margin-left: 3.8rem;
+  color: #011936;
+}
+#filter-overlay .range-container p {
+  display: inline-block;
+}
+#filter-overlay .range-container p#age {
+  float: right;
+  margin-right: 7rem;
+}
+#filter-overlay .range-field {
+  width: 80%;
+  margin: 1rem auto;
 }
 
 #template2-head {
@@ -8305,8 +8359,8 @@ div#navigation .menu-row.end {
 }
 div#navigation .menu-row.right {
   position: absolute;
-  right: 1rem;
-  top: 1.2rem;
+  right: 0.8rem;
+  top: 1rem;
 }
 div#navigation .menu-row.top {
   margin-top: 6rem;
@@ -8323,7 +8377,7 @@ div#navigation .menu-row #close-button {
   grid-column: 2/3;
 }
 div#navigation .menu-row i {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 div#navigation .menu-row img {
   border-radius: 50%;
@@ -8335,10 +8389,6 @@ div#navigation .menu-row a {
   text-decoration: none;
   color: #ffffff;
   margin-left: 1rem;
-}
-
-#close-button {
-  color: #ffffff;
 }
 
 #find-content {
