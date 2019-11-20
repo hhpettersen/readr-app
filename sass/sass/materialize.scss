@@ -100,6 +100,7 @@ body {
     justify-content: space-around;
 }
 
+
 #main-logo {
     width: 20rem;
     align-self: center;
@@ -110,6 +111,7 @@ body {
     align-self: center;
     height: 50px;
     cursor: pointer;
+    margin-top: 5rem;
 }
 
 #discover-button {
@@ -431,16 +433,18 @@ div#navigation {
     p {
         font-size: 1rem;
         padding: 0px 20px;
-        margin: 0.2rem 0rem;
+        color: map-get($blue, 'dark');
     }
 }
 
 #profile-pic {
     display: inline-block;
-    margin: 20px 0px 0px 20px;
+    margin: 1rem;
     position: relative;
     height: 5rem;
     width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #profile-name {
@@ -448,10 +452,15 @@ div#navigation {
     position: absolute;
     font-size: 2.5rem;
     padding: 5px;
+    margin-left: 1rem;
+    color: map-get($blue, 'base')
 }
 
 #profile-text {
     margin: 0 auto;
+    
+
+    
 }
 
 #num-reads {
@@ -459,7 +468,7 @@ div#navigation {
     width: 90%;
     border-top: 1px solid map-get($blue, 'base');
     border-bottom: 1px solid map-get($blue, 'base');
-    margin: 0 auto;
+    margin: 1rem;
 
     h3 {
         text-align: center;
@@ -468,13 +477,14 @@ div#navigation {
         margin-bottom: 0.5rem;
         margin-top: 1.2rem;
         display: inline-block;
+        color: map-get($blue, 'dark')
     }
 }
 
 #book-covers {
-display: flex;
-justify-content: space-evenly;
-margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
 
     div {
         width: 85px;
@@ -503,11 +513,19 @@ margin-top: 10px;
         font-size: 3.5rem;
         padding-top: 15px;
         transition: 0.5s;
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
     }
 
     i:hover {
         color: map-get($pink, 'base' );
         cursor: pointer;
     }
+
 }
 
+/* CAROUSEL */
+
+.carousel {
+    height: 100% !important;
+}
