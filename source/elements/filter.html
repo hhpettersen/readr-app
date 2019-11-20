@@ -46,7 +46,7 @@
             <!-- Filter overlay -->
             <div id="filter-overlay" class=''>
                 <i id='close-btn2' class='material-icons right medium'>clear</i>
-                <div class=range-container>
+                <div class='range-container top'>
                     <p id='filter-age' class='filter-text'>Select minimum age:</p>
                     <p id='age'></p>
                     <form action="#">
@@ -54,16 +54,34 @@
                             <input type="range" id="range-age" min="18" max="60";
                     </form>
                 </div>
+                <div class='range-container male'>
+                    <p>Male:</p>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class='range-container female'>
+                    <p>Female:</p>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
 
                 <div class=range-container>
-                        <p id='filter-range' class='filter-text'>Maximum distance:</p>
-                        <p id='dist'></p>
-                        <form action="#">
-                            <p class="range-field">
-                                <input type="range" id="range-dist" min="1" max="100";
-                        </form>
-                    </div>
-
+                    <p id='filter-range' class='filter-text'>Maximum distance:</p>
+                    <p id='dist'></p>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="range-dist" min="1" max="100";
+                    </form>
+                </div>
             </div>
     
             <!-- Search page main content -->
@@ -74,7 +92,7 @@
                 <div class="body-light-yellow">
                     <img src="../../custom_artwork/readr logo blue-01.svg" id="main-logo"/>
                     <img src="../../custom_artwork/filter icon1 dark blue-01.svg" id="discover-filter"/>
-                    <a href='find.html' class="waves-effect waves-light btn" id="discover-button">Discover</a>
+                    <a href='find-carousel.html' class="waves-effect waves-light btn" id="discover-button">Discover</a>
                 </div>
                 <footer class="footer1" id="template3-nav">
                     <i class="material-icons " id='home'>public</i> 

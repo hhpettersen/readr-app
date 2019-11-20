@@ -8204,20 +8204,36 @@ body {
 }
 #filter-overlay .range-container {
   font-size: 1.6rem;
-  margin-top: 8rem;
+  margin-top: 1rem;
   margin-left: 3.8rem;
   color: #011936;
+  margin-bottom: 3.5rem;
+}
+#filter-overlay .range-container.top {
+  margin-top: 6rem;
+}
+#filter-overlay .range-container.male {
+  margin-bottom: 0;
+}
+#filter-overlay .range-container.female {
+  margin-top: 0;
 }
 #filter-overlay .range-container p {
   display: inline-block;
+  margin-bottom: 0;
 }
 #filter-overlay .range-container p#age {
   float: right;
-  margin-right: 7rem;
+  margin-right: 17%;
 }
 #filter-overlay .range-container p#dist {
   float: right;
-  margin-right: 7rem;
+  margin-right: 17%;
+}
+#filter-overlay .range-container .switch {
+  float: right;
+  margin-right: 17%;
+  margin-top: 1rem;
 }
 #filter-overlay .range-field {
   width: 80%;
