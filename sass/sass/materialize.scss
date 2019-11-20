@@ -504,23 +504,37 @@ div#navigation {
     }
 }
 
-#contact-icons {
+#contact-icons-node {
     display: flex;
     justify-content: space-evenly;
 
-    i {
-        color: map-get($blue, 'dark');
-        font-size: 3.5rem;
-        padding-top: 15px;
-        transition: 0.5s;
+    #contact-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-top: 4rem;
         margin-bottom: 1.5rem;
+        transition: 0.5s;
+        color: map-get($blue, 'dark');
+        background-color: transparent;
+        border: none;
+
+        i {
+            font-size: 3.5rem;
+        }
+
+        label {
+            font-size: 1rem;
+            color: map-get($blue, 'dark');
+        }
     }
 
-    i:hover {
+    #contact-icons:hover {
         color: map-get($pink, 'base' );
         cursor: pointer;
     }
+
+
 
 }
 
@@ -528,4 +542,8 @@ div#navigation {
 
 .carousel {
     height: 100% !important;
+}
+
+.carousel-item {
+    cursor: default;
 }
