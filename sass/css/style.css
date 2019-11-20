@@ -8140,6 +8140,7 @@ body {
   color: #15627d;
   align-self: center;
   height: 50px;
+  cursor: pointer;
 }
 
 #discover-button {
@@ -8151,9 +8152,14 @@ body {
   align-self: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 20px;
-  padding-right: 20x;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.footer1 {
+  grid-area: 5/2/6/3;
+  background-color: #fef7e1;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
 
 #template2-head {
@@ -8239,6 +8245,7 @@ body {
   font-size: 3rem;
   padding: 10px 20px;
   border-left: 1.5px solid #f9cf5c;
+  line-height: 0.7;
 }
 #template3-nav #home {
   border-left: none;

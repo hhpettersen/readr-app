@@ -98,6 +98,7 @@ body {
     color: map-get($blue, 'base');
     align-self: center;
     height: 50px;
+    cursor: pointer;
 }
 
 #discover-button {
@@ -109,9 +110,14 @@ body {
     align-self: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20x;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer1 {
+    grid-area: 5 / 2 / 6 / 3;
+    background-color: map-get($yellow, 'light');
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
 }
 
 //****** TEMPLATE-2 STYLES ******//
@@ -200,6 +206,7 @@ body {
     width: 100%;
     bottom: 10px;
     border-top: 1.5px solid map-get($yellow, 'base');
+    
 
     display:flex;
     justify-content: center;
@@ -209,7 +216,9 @@ body {
         font-size: 3rem;
         padding: 10px 20px;
         border-left: 1.5px solid map-get($yellow, 'base');
+        line-height: 0.7;
     }
+
 
     #home {
         border-left: none;
