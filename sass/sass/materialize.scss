@@ -89,15 +89,32 @@ body {
 
 #container-yellow {
     background-color: map-get($yellow, 'base');
-}
+    
+    .body-light-yellow {
+        grid-area: 3 / 2 / 5 / 3;
+        background-color: map-get($yellow, 'light');
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
+        #main-logo-fp {
+            margin-top: -3rem;
+        }
 
-.body-light-yellow {
-    grid-area: 3 / 2 / 5 / 3;
-    background-color: map-get($yellow, 'light');
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+        #earth-logo {
+            margin-top: -7rem;
+            text-align: center;
+            font-size: 15rem;
+            color: map-get($blue, 'base');
+        }
+
+        #start-btn {
+            width: 60%;
+            margin: 0 auto;
+            background-color: map-get($blue, 'base');
+            border-radius: 5px;
+        }
+    }
 }
 
 
