@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ReadR</title>
+    <link rel="stylesheet" href="../../sass/css/style.css" type='text/css' />
+    <script src='../../sass/js/bin/materialize.js'></script>
+</head>
+
+<body>
+    <div class="container" id="container-yellow">
+        <header id="header1">
+            <i class="material-icons right" id="burger">menu</i>
+        </header>
+        <div class="body-light-yellow">
+
+            <div class="carousel carousel-slider">
+                <!-- JONAS -->
+                <a class="carousel-item" href="#one!">
+                        <div id='find-content'>
+                                <img id='profile-pic' src="../images/profilbilde-jonas.jpg" alt="profile picture" />
+                                <h2 id='profile-name'>Jonas</h2>
+                                <p id=#profile-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.</p>
+                                <div id='num-reads'>
+                                    <h3>140 reads</h3>
+                                </div>
+                                <div id='book-covers'>
+                                    <div id='book-cover-1'>
+                                        <img src='../images/book-cover-1.jpg' />
+                                    </div>
+                                    <div id='book-cover-2'>
+                                        <img src='../images/book-cover-2.jpg' />
+                                    </div>
+                                    <div id='book-cover-3'>
+                                        <img src='../images/book-cover-3.jpg' />
+                                    </div>
+                                </div>
+                                
+                                <div id='contact-icons'>
+                                        <i class="material-icons " id='chat'>chat</i>
+                                        <i class="material-icons " id='cake'>cake</i>
+                                </div>
+                            </div>
+                </a>
+                <!-- LENA -->    
+                <a class="carousel-item" href="#two!">
+                        <div id='find-content'>
+                                <img id='profile-pic' src="../images/woman_portrait.jpg" alt="profile picture" />
+                                <h2 id='profile-name'>Lena</h2>
+                                <p id=#profile-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.</p>
+                                <div id='num-reads'>
+                                    <h3>140 reads</h3>
+                                </div>
+                                <div id='book-covers'>
+                                    <div id='book-cover-1'>
+                                        <img src='../images/TheMetamorphosis.jpg' />
+                                    </div>
+                                    <div id='book-cover-2'>
+                                        <img src='../images/TheGambler.jpg' />
+                                    </div>
+                                    <div id='book-cover-3'>
+                                        <img src='../images/MasterAndTheMargarita.jpg' />
+                                    </div>
+                                </div>
+                                
+                                <div id='contact-icons'>
+                                        <i class="material-icons " id='chat'>chat</i>
+                                        <i class="material-icons " id='cake'>cake</i>
+                                </div>
+                            </div>
+                </a>
+                <!-- THEO -->
+                <a class="carousel-item" href="#three!">
+                        <div id='find-content'>
+                                <img id='profile-pic' src="../images/profilbilde-jonas.jpg" alt="profile picture" />
+                                <h2 id='profile-name'>Jonas</h2>
+                                <p id=#profile-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.</p>
+                                <div id='num-reads'>
+                                    <h3>140 reads</h3>
+                                </div>
+                                <div id='book-covers'>
+                                    <div id='book-cover-1'>
+                                        <img src='../images/book-cover-1.jpg' />
+                                    </div>
+                                    <div id='book-cover-2'>
+                                        <img src='../images/book-cover-2.jpg' />
+                                    </div>
+                                    <div id='book-cover-3'>
+                                        <img src='../images/book-cover-3.jpg' />
+                                    </div>
+                                </div>
+                                
+                                <div id='contact-icons'>
+                                        <i class="material-icons " id='chat'>chat</i>
+                                        <i class="material-icons " id='cake'>cake</i>
+                                </div>
+                            </div>
+                </a>
+                <!-- Margaret -->
+                <a class="carousel-item" href="#four!">
+                        <div id='find-content'>
+                                <img id='profile-pic' src="../images/woman2_portrait.jpg" alt="profile picture" />
+                                <h2 id='profile-name'>Margaret</h2>
+                                <p id=#profile-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.</p>
+                                <div id='num-reads'>
+                                    <h3>140 reads</h3>
+                                </div>
+                                <div id='book-covers'>
+                                    <div id='book-cover-1'>
+                                        <img src='../images/ThreeBodyProblem.jpg' />
+                                    </div>
+                                    <div id='book-cover-2'>
+                                        <img src='../images/Foundation.jpg' />
+                                    </div>
+                                    <div id='book-cover-3'>
+                                        <img src='../images/EndersGame.jpg' />
+                                    </div>
+                                </div>
+                                
+                                <div id='contact-icons'>
+                                        <i class="material-icons " id='chat'>chat</i>
+                                        <i class="material-icons " id='cake'>cake</i>
+                                </div>
+                            </div>
+                </a>
+            </div>
+
+        </div>
+
+        <footer class="footer1" id="template3-nav">
+                <i class="material-icons " id='home'>public</i> 
+                <i class="material-icons " id='chat'>chat</i>
+                <i class="material-icons " id='search'>search</i>
+                <i class="material-icons " id='person'>person</i>
+            </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                fullWidth: true
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -8352,6 +8352,8 @@ div#navigation .menu-row a {
   position: relative;
   height: 5rem;
   width: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 #profile-name {
@@ -8411,10 +8413,16 @@ div#navigation .menu-row a {
   padding-top: 15px;
   transition: 0.5s;
   margin-top: 4rem;
+  margin-bottom: 1.5rem;
 }
 #contact-icons i:hover {
   color: #f0108a;
   cursor: pointer;
+}
+
+/* CAROUSEL */
+.carousel {
+  height: 100% !important;
 }
 
 /*# sourceMappingURL=style.css.map */

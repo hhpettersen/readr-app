@@ -345,6 +345,8 @@ div#navigation {
     position: relative;
     height: 5rem;
     width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #profile-name {
@@ -408,6 +410,7 @@ div#navigation {
         padding-top: 15px;
         transition: 0.5s;
         margin-top: 4rem;
+        margin-bottom: 1.5rem;
     }
 
     i:hover {
@@ -417,3 +420,8 @@ div#navigation {
 
 }
 
+/* CAROUSEL */
+
+.carousel {
+    height: 100% !important;
+}
