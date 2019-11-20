@@ -8119,6 +8119,9 @@ body {
   padding-top: 5px;
   padding-right: 5px;
 }
+#header1 #burger:hover {
+  cursor: pointer;
+}
 
 #container-yellow {
   background-color: #f9cf5c;
@@ -8252,7 +8255,6 @@ body {
   border-left: none;
 }
 
-<<<<<<< HEAD
 #template1-nav {
   grid-area: 5/3/5/2;
   height: 100%;
@@ -8271,20 +8273,21 @@ body {
   border-left: none;
 }
 
-#navigation {
-=======
 div#navigation {
->>>>>>> 18c10dcd92b709ebbde1cf4c05182367c9cfabea
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   position: fixed;
   width: 70%;
-  height: 90%;
+  height: 91.2vh;
   top: 0;
   right: 0;
   background-color: #15627d;
   color: #ffffff;
+  z-index: 10;
+}
+div#navigation.hide-mobile {
+  display: none;
 }
 div#navigation .menu-row {
   display: grid;
@@ -8301,13 +8304,12 @@ div#navigation .menu-row.end {
   margin-bottom: 2rem;
 }
 div#navigation .menu-row.right {
-  width: 100%;
-  margin-left: auto;
-  margin-right: 1rem;
-  transition: transform ease-out 1s;
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
 }
-div#navigation .menu-row.right:hover {
-  transform: scale(1.5);
+div#navigation .menu-row.top {
+  margin-top: 6rem;
 }
 div#navigation .menu-row.border {
   border-bottom: 0.05rem #ffffff solid;
@@ -8333,6 +8335,10 @@ div#navigation .menu-row a {
   text-decoration: none;
   color: #ffffff;
   margin-left: 1rem;
+}
+
+#close-button {
+  color: #ffffff;
 }
 
 #find-content {

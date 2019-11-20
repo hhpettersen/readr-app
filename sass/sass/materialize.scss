@@ -73,6 +73,10 @@ body {
         font-size: 3rem;
         padding-top: 5px;
         padding-right: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -253,12 +257,16 @@ div#navigation {
     justify-content: flex-start;
     position: fixed;
     width: 70%;
-    height: 90%;
+    height: 91.2vh;
     top: 0;
     right: 0;
     background-color: map-get($blue, 'base');
     color: map-get($white, 'base');
+    z-index: 10;
 
+    &.hide-mobile {
+        display:none;
+    }
 
     .menu-row {
         display: grid;
@@ -276,9 +284,13 @@ div#navigation {
         }
 
         &.right {
-            width: 100%;
-            margin-left: auto;
-            margin-right: 1rem;
+            position: absolute;
+            right: 1rem;
+            top: 1.2rem;
+        }
+
+        &.top {
+            margin-top: 6rem;
         }
 
         &.border {
