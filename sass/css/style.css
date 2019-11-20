@@ -8348,10 +8348,12 @@ div#navigation .menu-row a {
 
 #profile-pic {
   display: inline-block;
-  margin: 20px 0px 0px 20px;
+  margin: 1rem;
   position: relative;
   height: 5rem;
   width: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 #profile-name {
@@ -8359,6 +8361,7 @@ div#navigation .menu-row a {
   position: absolute;
   font-size: 2.5rem;
   padding: 5px;
+  margin-left: 1rem;
   color: #15627d;
 }
 
@@ -8413,6 +8416,7 @@ div#navigation .menu-row a {
   padding-top: 15px;
   transition: 0.5s;
   margin-top: 4rem;
+  margin-bottom: 1.5rem;
 }
 #contact-icons i:hover {
   color: #f0108a;
