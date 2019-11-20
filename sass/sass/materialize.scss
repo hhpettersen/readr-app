@@ -341,7 +341,7 @@ div#navigation {
 
 #profile-pic {
     display: inline-block;
-    margin: 20px 0px 0px 20px;
+    margin: 1rem;
     position: relative;
     height: 5rem;
     width: 5rem;
@@ -354,6 +354,7 @@ div#navigation {
     position: absolute;
     font-size: 2.5rem;
     padding: 5px;
+    margin-left: 1rem;
     color: map-get($blue, 'base')
 }
 
