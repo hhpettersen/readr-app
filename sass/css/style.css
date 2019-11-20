@@ -8215,6 +8215,10 @@ body {
   float: right;
   margin-right: 7rem;
 }
+#filter-overlay .range-container p#dist {
+  float: right;
+  margin-right: 7rem;
+}
 #filter-overlay .range-field {
   width: 80%;
   margin: 1rem auto;

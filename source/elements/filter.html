@@ -60,7 +60,7 @@
                         <p id='dist'></p>
                         <form action="#">
                             <p class="range-field">
-                                <input type="range" id="range-dist" min="18" max="60";
+                                <input type="range" id="range-dist" min="1" max="100";
                         </form>
                     </div>
 
@@ -85,7 +85,7 @@
         </div>
         
         <script src='../../sass/js/bin/materialize.js'></script>
-        <script >
+        <script>
             const burger = document.querySelector('#burger');
             const nav = document.querySelector('#navigation');
             const closeBtn1 = document.querySelector('#close-btn1');
@@ -94,7 +94,7 @@
             const closeBtn2 = document.querySelector('#close-btn2');
             const rangeAge = document.querySelector('#range-age');
             const ageText = document.querySelector('#age');
-            const rangeDist = document-querySelector('#range-dist');
+            const rangeDist = document.querySelector('#range-dist');
             const rangeText = document.querySelector('#dist')
 
             burger.addEventListener('click', e => {
@@ -122,11 +122,10 @@
                 e.preventDefault();
             })
             
-            rangeAge.addEventListener('change', e => {
-                ageText.innerHTML = rangeAge.value;
+            rangeDist.addEventListener('change', e => {
+                rangeText.innerHTML = rangeDist.value + 'km';
                 e.preventDefault();
             });
-
         </script>
     </body>
     
