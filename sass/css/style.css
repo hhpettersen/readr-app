@@ -8252,7 +8252,6 @@ body {
   border-left: none;
 }
 
-<<<<<<< HEAD
 #template1-nav {
   grid-area: 5/3/5/2;
   height: 100%;
@@ -8271,10 +8270,7 @@ body {
   border-left: none;
 }
 
-#navigation {
-=======
 div#navigation {
->>>>>>> 18c10dcd92b709ebbde1cf4c05182367c9cfabea
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8304,10 +8300,6 @@ div#navigation .menu-row.right {
   width: 100%;
   margin-left: auto;
   margin-right: 1rem;
-  transition: transform ease-out 1s;
-}
-div#navigation .menu-row.right:hover {
-  transform: scale(1.5);
 }
 div#navigation .menu-row.border {
   border-bottom: 0.05rem #ffffff solid;
@@ -8333,6 +8325,10 @@ div#navigation .menu-row a {
   text-decoration: none;
   color: #ffffff;
   margin-left: 1rem;
+}
+
+#close-button {
+  color: #ffffff;
 }
 
 #find-content {
@@ -8416,6 +8412,11 @@ div#navigation .menu-row a {
 #contact-icons i:hover {
   color: #f0108a;
   cursor: pointer;
+}
+
+/* CAROUSEL */
+.carousel {
+  height: 100% !important;
 }
 
 /*# sourceMappingURL=style.css.map */
