@@ -11,6 +11,40 @@
 </head>
 
 <body>
+
+    <!-- Sidebar menu -->
+    <div id='navigation' class='hide-mobile'>
+        <div class='menu-row right'>
+            <a id='close-button' href="#">
+                <i id='close-btn1' class='material-icons right medium'>clear</i>
+            </a>
+        </div>
+        <div class='menu-row border top hover'>
+            <img src="../images/face.png" alt="profile picture">
+            <a href="#">My profile</a>
+        </div>
+        <div class='menu-row border hover'>
+            <i class="material-icons">public</i>
+            <a href="filter.html">Discover</a>
+        </div>
+        <div class='menu-row border hover'>
+            <i class="material-icons">sms</i>
+            <a href="#">Messages</a>
+        </div>
+        <div class='menu-row border hover'>
+            <i class="material-icons">help</i>
+            <a href="#">help</a>
+        </div>
+        <div class='menu-row hover'>
+            <i class="material-icons">phone</i>
+            <a href="#">About Readr</a>
+        </div>
+        <div class='menu-row end hover'>
+            <i class="material-icons">settings</i>
+            <a href="#">Settings</a>
+        </div>
+    </div>
+
     <div class="container" id="container-yellow">
         <header id="header1">
             <i class="material-icons right" id="burger">menu</i>
@@ -42,9 +76,16 @@
                             </div>
                         </div>
 
-                        <div id='contact-icons'>
-                            <i class="material-icons " id='chat'>chat</i>
-                            <i class="material-icons " id='cake'>cake</i>
+                        <div id='contact-icons-node'>
+                            <button id="contact-icons">
+                                <label>message</label>
+                                <i class="material-icons " id='chat'>chat</i>
+                            </button>
+
+                            <button id="contact-icons">
+                                <label>nudge</label>
+                                <i class="material-icons " id='cake'>free_breakfast</i>
+                            </button>
                         </div>
                     </div>
                 </a>
@@ -58,7 +99,7 @@
                             tempor incididunt ut labore et
                             dolore magna aliqua.</p>
                         <div id='num-reads'>
-                            <h3>140 reads</h3>
+                            <h3>123 reads</h3>
                         </div>
                         <div id='book-covers'>
                             <div id='book-cover-1'>
@@ -72,9 +113,16 @@
                             </div>
                         </div>
 
-                        <div id='contact-icons'>
-                            <i class="material-icons " id='chat'>chat</i>
-                            <i class="material-icons " id='cake'>cake</i>
+                        <div id='contact-icons-node'>
+                            <button id="contact-icons">
+                                <label>message</label>
+                                <i class="material-icons " id='chat'>chat</i>
+                            </button>
+
+                            <button id="contact-icons">
+                                <label>nudge</label>
+                                <i class="material-icons " id='cake'>free_breakfast</i>
+                            </button>
                         </div>
                     </div>
                 </a>
@@ -102,9 +150,16 @@
                             </div>
                         </div>
 
-                        <div id='contact-icons'>
-                            <i class="material-icons " id='chat'>chat</i>
-                            <i class="material-icons " id='cake'>cake</i>
+                        <div id='contact-icons-node'>
+                            <button id="contact-icons">
+                                <label>message</label>
+                                <i class="material-icons " id='chat'>chat</i>
+                            </button>
+
+                            <button id="contact-icons">
+                                <label>nudge</label>
+                                <i class="material-icons " id='cake'>free_breakfast</i>
+                            </button>
                         </div>
                     </div>
                 </a>
@@ -117,7 +172,7 @@
                             tempor incididunt ut labore et
                             dolore magna aliqua.</p>
                         <div id='num-reads'>
-                            <h3>140 reads</h3>
+                            <h3>460 reads</h3>
                         </div>
                         <div id='book-covers'>
                             <div id='book-cover-1'>
@@ -131,9 +186,16 @@
                             </div>
                         </div>
 
-                        <div id='contact-icons'>
-                            <i class="material-icons " id='chat'>chat</i>
-                            <i class="material-icons " id='cake'>cake</i>
+                        <div id='contact-icons-node'>
+                            <button id="contact-icons">
+                                <label>message</label>
+                                <i class="material-icons " id='chat'>chat</i>
+                            </button>
+
+                            <button id="contact-icons">
+                                <label>nudge</label>
+                                <i class="material-icons " id='cake'>free_breakfast</i>
+                            </button>
                         </div>
                     </div>
                 </a>
@@ -157,6 +219,20 @@
                 fullWidth: true
             });
         });
+
+        const burger = document.querySelector('#burger');
+            const nav = document.querySelector('#navigation');
+            const closeBtn1 = document.querySelector('#close-btn1');
+
+            burger.addEventListener('click', e => {
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });
+            
+            closeBtn1.addEventListener('click', e => {
+                nav.classList.add('hide-mobile');
+                e.preventDefault();
+            });
     </script>
 </body>
 
