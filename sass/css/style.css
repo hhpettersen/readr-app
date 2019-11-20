@@ -8406,19 +8406,29 @@ div#navigation .menu-row a {
   opacity: 80%;
 }
 
-#contact-icons {
+#contact-icons-node {
   display: flex;
   justify-content: space-evenly;
 }
-#contact-icons i {
-  color: #011936;
-  font-size: 3.5rem;
-  padding-top: 15px;
-  transition: 0.5s;
+#contact-icons-node #contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 4rem;
   margin-bottom: 1.5rem;
+  transition: 0.5s;
+  color: #011936;
+  background-color: transparent;
+  border: none;
 }
-#contact-icons i:hover {
+#contact-icons-node #contact-icons i {
+  font-size: 3.5rem;
+}
+#contact-icons-node #contact-icons label {
+  font-size: 1rem;
+  color: #011936;
+}
+#contact-icons-node #contact-icons:hover {
   color: #f0108a;
   cursor: pointer;
 }
